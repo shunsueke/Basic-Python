@@ -13,10 +13,10 @@ def controller (X):
         c = X % count 
         count  += 1
         if c == 0:
-            print(A,"は素数です")
+            print(X,"は素数です")
             break
         else:
-            print(A,"は素数でありません")
+            print(X,"は素数でありません")
             break
 
 controller(A)
