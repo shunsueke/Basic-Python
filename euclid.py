@@ -17,5 +17,5 @@ while True:
     B = r
     r = A % B
     if r ==0:
-        print("最大公約数は、{B}")
+        print(B)
         break
