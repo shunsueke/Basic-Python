@@ -6,13 +6,16 @@ A = int(a)
 B = int(b)
 
 if A < B:
-    temp = A
-    A = B
-    B = temp 
+    A,B = B,A
+print(A,B)
 
-r = A % B    
+r = A % B 
 
-while True:
+if r == 0:
+    print(B)
+
+else:
+  while True:
     A = B
     B = r
     r = A % B
