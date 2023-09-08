@@ -1,25 +1,33 @@
 a = input("aの値を入力してください")
-b = input("bの値を入力してください")
 
  # To Do
 
-A = int(a)
-B = int(b)
+A = int(997)
 
-count = 2
 
 def controller (X):
-    while count  <= X -1:
-        c = X % count 
-        count  += 1
-        if c == 0:
-            print(X,"は素数です")
-            break
-        else:
-            print(X,"は素数でありません")
-            break
+      
+    if X == 1:
+      print(X,"は素数ではありません")
+
+    elif X == 2 :
+      print(X,"は素数です")
+    
+    elif X == 3:
+       print(X,"は素数です")
+
+    else:
+       count = 2
+       while count <= X -1:
+          c = X % count 
+          if c == 0:
+             print(X,"は素数ではありません")
+             break
+          else:
+             count += 1 
+             if count == X -1:
+                print(X,"は素数です")
+                break
+
 
 controller(A)
-
-controller(B)
-    
