@@ -4,22 +4,34 @@ b = input("bの値を入力してください")
  # To Do
 
 A = int(a)
-B = int(b)
-
-count = 2
 
 def controller (X):
-    while count  <= X -1:
-        c = X % count 
-        count  += 1
-        if c == 0:
+
+    if  X <= 0:
+        return False
+    elif type(X) != int:
+        return False
+    else:
+        if X == 1:
+            print(X,"は素数ではないです")
+
+        elif X == 2:
             print(X,"は素数です")
-            break
+        
         else:
-            print(X,"は素数でありません")
-            break
+            count = 2
+            while count <= X-1:
+                c = X % count
+                if c == 0:
+                   print(X,"は素数ではありません")
+                   break
+                else:
+                  count += 1
+                  if count == X-1:
+                    print(X,"は素数です")
+                    break
+        
 
 controller(A)
 
-controller(B)
     
