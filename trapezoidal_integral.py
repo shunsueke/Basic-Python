@@ -4,6 +4,7 @@ from math import sin,pi,sqrt,exp
 # >>> 0
 # -----------
 
+
 def integral(f ,a = 0,b = 1,n = 100):
     h = (b - a) / n
     s = 0
@@ -14,5 +15,4 @@ def integral(f ,a = 0,b = 1,n = 100):
 
 print(integral(f=sin,a =0,b=pi/2,n=50))
 print(integral(f= lambda x: 4/(1+x**2)))
-print(integral(f= lambda x:sqrt(pi)*exp(-x**2), a =-100 ,b=100, n=1000))
-    
+print(integral(f= lambda x:sqrt(pi)*exp(-x**2), a =-100 ,b=100, n=1000)

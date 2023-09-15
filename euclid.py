@@ -4,7 +4,7 @@ b = (input("b の値を入力: "))
 # TODO
     
 A = 100
-B = 30
+B = 2
 
 def Definition(X,Y):
  
@@ -35,5 +35,4 @@ def Which_one(X,Y):
   
 print(Definition(A,B))
 print(f"A,Bは互いに素である。{Which_one(A,B)}")
-
 

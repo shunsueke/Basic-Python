@@ -1,7 +1,7 @@
 a = input("aの値を入力してください")
-b = input("bの値を入力してください")
 
  # To Do
+
 
 A = 14
 
@@ -21,6 +21,4 @@ def controller (X):
             return False
         return True
                                    
-controller(A)        
-
-    
+controller(A)       
