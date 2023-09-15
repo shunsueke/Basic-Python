@@ -9,7 +9,7 @@ def integral(f ,a = 0,b = 1,n = 100):
     s = 0
     for i in range(1,n):
         s +=  (h/2)*(f(a+(i-1)*h) + f(a+i*h))
-        return s
+    return s
         
 
 print(integral(f=sin,a =0,b=pi/2,n=50))

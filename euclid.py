@@ -1,14 +1,14 @@
-a = int(input("a の値を入力: "))
-b = int(input("b の値を入力: "))
+a = (input("a の値を入力: "))
+b = (input("b の値を入力: "))
 
 # TODO
     
-A = int(6)
-B = int(12)
+A = 100
+B = 30
 
 def Definition(X,Y):
  
- if X <= 0 or  Y <= 0:
+ if X <= 0  or  Y <= 0:
    return False
  
  elif type(X) != int or type(Y) != int:
@@ -20,15 +20,12 @@ def Definition(X,Y):
 
   r = X % Y    
   if r == 0:
-   print(Y)
+    return Y
   else:
-   while True:
-    X = Y
-    Y = r
-    r = X % Y
-    if r ==0:
-        print(Y)
-        break
+    while r != 0:
+     X,Y = Y,r
+     r = X % Y
+    return Y
 
 def Which_one(X,Y):
   if Definition(X,Y) == 1:
