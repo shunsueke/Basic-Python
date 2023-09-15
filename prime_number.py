@@ -2,32 +2,23 @@ a = input("aの値を入力してください")
 
  # To Do
 
-A = int(997)
 
+A = 14
 
 def controller (X):
-      
-    if X == 1:
-      print(X,"は素数ではありません")
 
-    elif X == 2 :
-      print(X,"は素数です")
+    if  X <= 0:
+        return  False
+    elif type(X) != int:
+        return  False
     
-    elif X == 3:
-       print(X,"は素数です")
-
     else:
-       count = 2
-       while count <= X -1:
-          c = X % count 
-          if c == 0:
-             print(X,"は素数ではありません")
-             break
-          else:
-             count += 1 
-             if count == X -1:
-                print(X,"は素数です")
-                break
+        if X == 1:
+          return False
 
-
-controller(A)
+        for i in range(2,int(X**0.5) + 1):
+           if X % i == 0:
+            return False
+        return True
+                                   
+controller(A)       
